@@ -10,7 +10,7 @@ import {
 import { DefaultSeo } from 'next-seo'
 import { ThemeProvider } from 'theme-ui'
 import SEO from '../../next-seo.config'
-import Head from 'next/Head'
+import Head from 'next/head'
 
 import theme from '../styles/theme'
 import '../styles/globals.scss'
