@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const AppHeader = (props) => {
+const AppHeader = () => {
 	return (
 		<div>
 			<Link href='/'>
@@ -14,6 +14,9 @@ const AppHeader = (props) => {
 			</Link>
 			<Link href='/app/referrals'>
 				<a className='menu'>Referrals</a>
+			</Link>
+			<Link href='/app/activity'>
+				<a className='menu'>Activity</a>
 			</Link>
 			<Link href='/app/settings'>
 				<a className='menu'>Settings</a>

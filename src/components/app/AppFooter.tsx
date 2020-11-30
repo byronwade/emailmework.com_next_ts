@@ -1,5 +1,4 @@
-const AppFooter = (props) => {
-	console.log(props.isLoggedIn)
+const AppFooter = () => {
 	return (
 		<div>
 			<h1>App Footer</h1>
