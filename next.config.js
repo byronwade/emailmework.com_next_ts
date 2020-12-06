@@ -1,9 +1,9 @@
-const fs = require('fs')
-const path = require('path')
-const withTypescript = require('@zeit/next-typescript')
-const withSass = require('@zeit/next-sass')
-const withLess = require('@zeit/next-less')
-const withCSS = require('@zeit/next-css')
+// const fs = require('fs')
+// const path = require('path')
+// const withTypescript = require('@zeit/next-typescript')
+// const withSass = require('@zeit/next-sass')
+// const withLess = require('@zeit/next-less')
+// const withCSS = require('@zeit/next-css')
 // const withMDX = require('@next/mdx')({
 // 	extension: /\.mdx?$/,
 // })
@@ -12,9 +12,6 @@ const withCSS = require('@zeit/next-css')
 // })
 
 module.exports = {
-	sassOptions: {
-		includePaths: [path.join(__dirname, 'styles')],
-	},
 	webpackDevMiddleware: (config) => {
 		config.watchOptions = {
 			poll: 1000,

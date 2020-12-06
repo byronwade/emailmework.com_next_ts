@@ -8,9 +8,9 @@ import { useRouter } from 'next/router'
 const Layout = (props) => {
 	const router = useRouter()
 
-	const isLoggedIn: boolean = false
+	const isLoggedIn = false
 	return (
-		<div>
+		<>
 			{!router.pathname.includes('/app/') ? (
 				<WebsiteHeader isLoggedIn={isLoggedIn} />
 			) : (
@@ -24,7 +24,7 @@ const Layout = (props) => {
 			) : (
 				<AppFooter isLoggedIn={isLoggedIn} />
 			)}
-		</div>
+		</>
 	)
 }
 

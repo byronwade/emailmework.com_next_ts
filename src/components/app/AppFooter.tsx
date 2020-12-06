@@ -1,8 +1,9 @@
-const AppFooter = () => {
+const AppFooter = (props) => {
+	console.log(props.isLoggedIn)
 	return (
-		<div>
+		<footer>
 			<h1>App Footer</h1>
-		</div>
+		</footer>
 	)
 }
 

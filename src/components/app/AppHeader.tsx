@@ -1,8 +1,9 @@
 import Link from 'next/link'
 
-const AppHeader = () => {
+const AppHeader = (props) => {
+	console.log(props.isLoggedIn)
 	return (
-		<div>
+		<header>
 			<Link href='/'>
 				<a className='menu'>Home</a>
 			</Link>
@@ -21,7 +22,7 @@ const AppHeader = () => {
 			<Link href='/app/settings'>
 				<a className='menu'>Settings</a>
 			</Link>
-		</div>
+		</header>
 	)
 }
 

@@ -7,18 +7,7 @@ import {
 	useStripe,
 	useElements,
 } from '@stripe/react-stripe-js'
-import styles from '../styles/Home.module.scss' //only temp
 import Layout from '../components/Layout'
-import {
-	Box,
-	Button,
-	Label,
-	Input,
-	Checkbox,
-	Container,
-	Message,
-} from 'theme-ui'
-
 export const config = { amp: false }
 
 const Signup = () => {
@@ -40,34 +29,29 @@ const Signup = () => {
 				description='Email me work is a company tasked to find the best jobs for freelancers on a budget.'
 			/>
 			<Layout>
-				<Container p={4} bg='muted'>
-					<Box as='form' onSubmit={(e) => e.preventDefault()}>
-						<Message>
+				<div className='container'>
+					<form onSubmit={(e) => e.preventDefault()}>
+						{/* <Message>
 							This is just a message for someone to read
-						</Message>
+						</Message> */}
+
+						<label htmlFor='username'>Username</label>
+						<input name='username' id='username' />
+
+						<label htmlFor='email'>Email</label>
+						<input name='email' id='email' />
+
+						<label htmlFor='phoneNumber'>Phone Number</label>
+						<input name='phoneNumber' id='phoneNumber' />
 
 						<CardElement />
 
-						<Label htmlFor='username'>Username</Label>
-						<Input name='username' id='username' mb={3} />
+						<label htmlFor='password'>Password</label>
+						<input type='password' name='password' id='password' />
 
-						<Label htmlFor='email'>Email</Label>
-						<Input name='email' id='email' mb={3} />
-
-						<Label htmlFor='phoneNumber'>Phone Number</Label>
-						<Input name='phoneNumber' id='phoneNumber' mb={3} />
-
-						<Label htmlFor='password'>Password</Label>
-						<Input
-							type='password'
-							name='password'
-							id='password'
-							mb={3}
-						/>
-
-						<Button disabled={!stripe}>Pay $1/month</Button>
-					</Box>
-				</Container>
+						<button disabled={!stripe}>Pay $1/month</button>
+					</form>
+				</div>
 			</Layout>
 		</>
 	)

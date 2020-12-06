@@ -2,7 +2,6 @@
 import { NextSeo } from 'next-seo'
 //import styles from '../styles/Home.module.scss' //only temp
 import Layout from '../components/Layout'
-import { Box, Button, Label, Input, Checkbox, Container } from 'theme-ui'
 
 export const config = { amp: false }
 
@@ -14,26 +13,21 @@ const Login = () => {
 				description='Email me work is a company tasked to find the best jobs for freelancers on a budget.'
 			/>
 			<Layout>
-				<Container p={4} bg='muted'>
-					<Box as='form' onSubmit={(e) => e.preventDefault()}>
-						<Label htmlFor='username'>Username</Label>
-						<Input name='username' id='username' mb={3} />
-						<Label htmlFor='password'>Password</Label>
-						<Input
-							type='password'
-							name='password'
-							id='password'
-							mb={3}
-						/>
-						<Box>
-							<Label mb={3}>
-								<Checkbox />
+				<div className='container'>
+					<form onSubmit={(e) => e.preventDefault()}>
+						<label htmlFor='username'>Username</label>
+						<input name='username' id='username' />
+						<label htmlFor='password'>Password</label>
+						<input type='password' name='password' id='password' />
+						<div>
+							<label>
+								<input type='checkbox' />
 								Remember me
-							</Label>
-						</Box>
-						<Button>Submit</Button>
-					</Box>
-				</Container>
+							</label>
+						</div>
+						<button type='button'>Submit</button>
+					</form>
+				</div>
 			</Layout>
 		</>
 	)

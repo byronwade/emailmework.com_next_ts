@@ -1,9 +1,9 @@
 const WebsiteFooter = (props) => {
 	console.log(props.isLoggedIn)
 	return (
-		<div>
+		<footer>
 			<h1>Website Footer</h1>
-		</div>
+		</footer>
 	)
 }
 
