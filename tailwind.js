@@ -37,7 +37,6 @@ module.exports = {
 		mode: 'objectstyles',
 	},
 	plugins: [
-		require('@tailwindcss/forms'),
 		require('@tailwindcss/typography'),
 		require('tailwind-bootstrap-grid')(),
 	],

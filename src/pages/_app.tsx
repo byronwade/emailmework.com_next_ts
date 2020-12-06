@@ -10,7 +10,7 @@ import { QueryCache, ReactQueryCacheProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query-devtools'
 
 import '../styles/globals.css'
-import '../styles/stripe.css' //only temp
+//import '../styles/stripe.css' //only temp
 
 const stripePromise = loadStripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh')
 
